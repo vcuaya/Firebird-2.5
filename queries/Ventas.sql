@@ -96,7 +96,7 @@ SELECT (
 	END AS "Online"
 FROM minve01
 WHERE CAST(fechaelab AS DATE) BETWEEN CURRENT_DATE -7 AND CURRENT_DATE -1
-	AND tipo_doc IN ('F', 'R', 'V')
+	AND tipo_doc IN ('F', 'R', 'V', 'D')
 	AND almacen IN ('1', '2', '5', '6', '7', '13', '14', '15', '16')
 	AND(
 		(
